@@ -2,6 +2,8 @@ from fastapi import APIRouter, Request
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 
+from auth.dependencies import get_current_user
+
 router = APIRouter(prefix="/health", tags=["health"])
 templates = Jinja2Templates(directory="templates")
 
@@ -16,7 +18,7 @@ def login_page(request: Request):
 
 @router.get("/dashboard", response_class=HTMLResponse)
 def dashboard(request: Request):
-    user = request.cookies.get("user")
+    user = get_current_user(request)
     if not user:
         return templates.TemplateResponse(
             "health/login.html",
@@ -25,5 +27,9 @@ def dashboard(request: Request):
 
     return templates.TemplateResponse(
         "health/dashboard.html",
-        {"request": request, "user": user}
+        {
+            "request": request,
+            "user": user.username,
+            "role": user.role,
+        }
     )

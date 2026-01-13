@@ -5,6 +5,10 @@ from fastapi.templating import Jinja2Templates
 from db.database import SessionLocal
 from models.user import User
 from security import verify_password
+from auth.session import create_session, SESSION_COOKIE
+
+from fastapi.responses import RedirectResponse
+from auth.session import SESSION_COOKIE
 
 router = APIRouter()
 templates = Jinja2Templates(directory="templates")
@@ -26,6 +30,19 @@ def login(
             {"request": request, "error": "Usuario o contraseña incorrectos"},
         )
 
+    session_token = create_session({"user_id": user.id})
+
     response = RedirectResponse(url="/health/dashboard", status_code=302)
-    response.set_cookie(key="user", value=user.username)
+    response.set_cookie(
+        key=SESSION_COOKIE,
+        value=session_token,
+        httponly=True,
+    )
+    return response
+
+@router.get("/health/logout")
+def logout():
+    response = RedirectResponse(url="/health", status_code=302)
+    response.delete_cookie(SESSION_COOKIE)
+
     return response
