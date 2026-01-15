@@ -22,12 +22,9 @@ class Set(Base):
     )
 
     set_type = Column(Enum(SetType), nullable=False)
-
     repetitions = Column(Integer, nullable=False)
     weight_kg = Column(Float, nullable=False)
-
     order_index = Column(Integer, nullable=False, default=0)
-
     performed_exercise = relationship(
         "PerformedExercise",
         back_populates="sets",

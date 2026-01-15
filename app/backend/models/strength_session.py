@@ -8,6 +8,7 @@ class StrengthSession(Base):
     __tablename__ = "strength_session"
 
     id = Column(Integer, primary_key=True, index=True)
+
     training_day_id = Column(
         Integer,
         ForeignKey("training_day.id", ondelete="CASCADE"),

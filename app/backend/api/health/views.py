@@ -33,3 +33,22 @@ def dashboard(request: Request):
             "role": user.role,
         }
     )
+
+@router.get("/activity", response_class=HTMLResponse)
+def activity_page(request: Request):
+    user = get_current_user(request)
+    if not user:
+        return templates.TemplateResponse(
+            "health/login.html",
+            {"request": request, "error": "Debes iniciar sesión"}
+        )
+
+    return templates.TemplateResponse(
+        "health/activity.html",
+        {
+            "request": request,
+            "user": user.username,
+            "role": user.role,
+        }
+    )
+
