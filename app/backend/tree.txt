@@ -2,8 +2,8 @@
 ├── api
 │   └── health
 │       ├── activity.py
+│       ├── api_exercise.py
 │       ├── auth.py
-│       ├── exercise.py
 │       ├── __pycache__
 │       │   ├── activity.cpython-310.pyc
 │       │   ├── auth.cpython-310.pyc
@@ -15,9 +15,9 @@
 │       ├── router.py
 │       └── views.py
 ├── auth
-│   ├── api_dependencies.py
 │   ├── dependencies.py
 │   ├── __pycache__
+│   │   ├── api_dependencies.cpython-310.pyc
 │   │   ├── dependencies.cpython-310.pyc
 │   │   └── session.cpython-310.pyc
 │   └── session.py
@@ -25,6 +25,9 @@
 │   ├── database.py
 │   └── __pycache__
 │       └── database.cpython-310.pyc
+├── logging_config.py
+├── logs
+│   └── app.log
 ├── main.py
 ├── models
 │   ├── cardio_session.py
@@ -49,6 +52,7 @@
 │   ├── training_day.py
 │   └── user.py
 ├── __pycache__
+│   ├── logging_config.cpython-310.pyc
 │   ├── main.cpython-310.pyc
 │   ├── scratch_test.cpython-310.pyc
 │   └── security.cpython-310.pyc
@@ -82,7 +86,6 @@
 │   └── health
 │       ├── activity.html
 │       ├── dashboard.html
-│       ├── exercise_detail.html
 │       ├── index.html
 │       └── login.html
 ├── tree.txt
@@ -3940,4 +3943,4 @@
     ├── lib64 -> lib
     └── pyvenv.cfg
 
-462 directories, 3478 files
+463 directories, 3480 files

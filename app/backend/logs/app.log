@@ -1,0 +1,235 @@
+2026-01-15 12:06:31,294 | INFO | 🟢 Logging inicializado correctamente
+2026-01-15 12:06:31,312 | INFO | 🚀 SRV Backend arrancado correctamente
+2026-01-15 12:06:52,115 | INFO | GET /docs | 200 | 2.78 ms
+2026-01-15 12:06:52,416 | INFO | GET /openapi.json | 200 | 37.36 ms
+2026-01-15 12:17:58,813 | INFO | GET /health/activity/today | 200 | 345.91 ms
+2026-01-15 12:23:12,062 | INFO | 🟢 Logging inicializado correctamente
+2026-01-15 12:23:12,078 | INFO | 🚀 SRV Backend arrancado correctamente
+2026-01-15 12:23:44,568 | INFO | GET /health | 307 | 2.54 ms
+2026-01-15 12:23:44,634 | INFO | GET /health/ | 200 | 47.97 ms
+2026-01-15 12:23:51,245 | INFO | POST /health/login | 302 | 642.35 ms
+2026-01-15 12:23:51,289 | INFO | GET /health/dashboard | 200 | 22.39 ms
+2026-01-15 12:24:02,584 | INFO | 📅 get_today_activity | user_id=1 | date=2026-01-15
+2026-01-15 12:24:02,681 | INFO | ✅ TrainingDay found | cardio_sessions=0 | strength_sessions=1
+2026-01-15 12:24:02,682 | INFO | 🏃 Cardio sessions processed: 0
+2026-01-15 12:24:02,682 | INFO | 🏋️ StrengthSession id=4 muscles=2
+2026-01-15 12:24:02,683 | INFO | 💪 MuscleGroup=Pectoral | performed_exercises=2
+2026-01-15 12:24:02,683 | INFO | 💪 MuscleGroup=Espalda | performed_exercises=2
+2026-01-15 12:24:02,684 | INFO | 📦 Strength result | groups=2 | total_exercises=4
+2026-01-15 12:24:02,687 | INFO | GET /health/activity/today | 200 | 126.77 ms
+2026-01-15 12:59:01,410 | INFO | 🟢 Logging inicializado correctamente
+2026-01-15 12:59:01,427 | INFO | 🚀 SRV Backend arrancado correctamente
+2026-01-15 12:59:14,048 | INFO | 🟢 Logging inicializado correctamente
+2026-01-15 12:59:14,065 | INFO | 🚀 SRV Backend arrancado correctamente
+2026-01-15 13:00:38,023 | INFO | GET /health/api/exercise/3 | 404 | 2.96 ms
+2026-01-15 13:00:47,145 | INFO | GET /docs | 200 | 1.55 ms
+2026-01-15 13:00:47,249 | INFO | GET /openapi.json | 200 | 35.79 ms
+2026-01-15 13:04:53,759 | INFO | GET /health/api/exercise/3 | 404 | 1.58 ms
+2026-01-15 13:05:02,947 | INFO | GET /health/exercise/3 | 404 | 1.60 ms
+2026-01-15 13:05:08,522 | INFO | GET /health/api/exercise/3 | 404 | 1.62 ms
+2026-01-15 13:23:33,598 | INFO | 🟢 Logging inicializado correctamente
+2026-01-15 13:23:33,615 | INFO | 🚀 SRV Backend arrancado correctamente
+2026-01-15 13:23:36,405 | INFO | 🟢 Logging inicializado correctamente
+2026-01-15 13:23:36,422 | INFO | 🚀 SRV Backend arrancado correctamente
+2026-01-15 13:49:19,703 | INFO | 🟢 Logging inicializado correctamente
+2026-01-15 13:49:19,732 | INFO | 🚀 SRV Backend arrancado correctamente
+2026-01-15 13:50:30,174 | INFO | GET /health/api/exercise/3 | 404 | 2.26 ms
+2026-01-15 13:52:44,819 | INFO | 🟢 Logging inicializado correctamente
+2026-01-15 13:52:44,847 | INFO | 🚀 SRV Backend arrancado correctamente
+2026-01-15 13:52:50,899 | INFO | GET /health | 307 | 1.96 ms
+2026-01-15 13:52:50,976 | INFO | GET /health/ | 200 | 48.66 ms
+2026-01-15 13:52:57,564 | INFO | POST /health/login | 302 | 644.46 ms
+2026-01-15 13:52:57,603 | INFO | GET /health/dashboard | 200 | 21.10 ms
+2026-01-15 13:53:04,710 | INFO | GET /docs | 200 | 1.71 ms
+2026-01-15 13:53:04,873 | INFO | GET /openapi.json | 200 | 39.19 ms
+2026-01-15 13:53:21,985 | ERROR | 🔥 ERROR 500 | GET /health/api/health/api/exercise/3
+Traceback (most recent call last):
+  File "/home/devuser/srv/app/backend/main.py", line 25, in logging_middleware
+    response = await call_next(request)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/fastapi/routing.py", line 115, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/fastapi/routing.py", line 101, in app
+    response = await f(request)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/fastapi/routing.py", line 355, in app
+    raw_response = await run_endpoint_function(
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/fastapi/routing.py", line 245, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/anyio/to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 2502, in run_sync_in_worker_thread
+    return await future
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+  File "/home/devuser/srv/app/backend/api/health/api_exercise.py", line 33, in get_exercise_detail
+    .joinedload("muscle_group"),
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/sqlalchemy/orm/strategy_options.py", line 317, in joinedload
+    loader = self._set_relationship_strategy(
+  File "<string>", line 2, in _set_relationship_strategy
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/sqlalchemy/sql/base.py", line 284, in _generative
+    x = fn(self, *args, **kw)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/sqlalchemy/orm/strategy_options.py", line 807, in _set_relationship_strategy
+    self._clone_for_bind_strategy(
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/sqlalchemy/orm/strategy_options.py", line 1287, in _clone_for_bind_strategy
+    load_element = _TokenStrategyLoad.create(
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/sqlalchemy/orm/strategy_options.py", line 1764, in create
+    path = opt._init_path(
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/sqlalchemy/orm/strategy_options.py", line 2166, in _init_path
+    raise sa_exc.ArgumentError(
+sqlalchemy.exc.ArgumentError: Strings are not accepted for attribute names in loader options; please use class-bound attributes directly.
+2026-01-15 13:53:31,101 | ERROR | 🔥 ERROR 500 | GET /health/api/health/api/exercise/3
+Traceback (most recent call last):
+  File "/home/devuser/srv/app/backend/main.py", line 25, in logging_middleware
+    response = await call_next(request)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/fastapi/routing.py", line 115, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/fastapi/routing.py", line 101, in app
+    response = await f(request)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/fastapi/routing.py", line 355, in app
+    raw_response = await run_endpoint_function(
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/fastapi/routing.py", line 245, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/anyio/to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 2502, in run_sync_in_worker_thread
+    return await future
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+  File "/home/devuser/srv/app/backend/api/health/api_exercise.py", line 33, in get_exercise_detail
+    .joinedload("muscle_group"),
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/sqlalchemy/orm/strategy_options.py", line 317, in joinedload
+    loader = self._set_relationship_strategy(
+  File "<string>", line 2, in _set_relationship_strategy
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/sqlalchemy/sql/base.py", line 284, in _generative
+    x = fn(self, *args, **kw)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/sqlalchemy/orm/strategy_options.py", line 807, in _set_relationship_strategy
+    self._clone_for_bind_strategy(
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/sqlalchemy/orm/strategy_options.py", line 1287, in _clone_for_bind_strategy
+    load_element = _TokenStrategyLoad.create(
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/sqlalchemy/orm/strategy_options.py", line 1764, in create
+    path = opt._init_path(
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/sqlalchemy/orm/strategy_options.py", line 2166, in _init_path
+    raise sa_exc.ArgumentError(
+sqlalchemy.exc.ArgumentError: Strings are not accepted for attribute names in loader options; please use class-bound attributes directly.
+2026-01-15 13:54:47,471 | INFO | GET /health/api/exercise/3 | 404 | 5.67 ms
+2026-01-15 13:55:11,795 | ERROR | 🔥 ERROR 500 | GET /health/api/health/api/exercise/3
+Traceback (most recent call last):
+  File "/home/devuser/srv/app/backend/main.py", line 25, in logging_middleware
+    response = await call_next(request)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/fastapi/routing.py", line 115, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/fastapi/routing.py", line 101, in app
+    response = await f(request)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/fastapi/routing.py", line 355, in app
+    raw_response = await run_endpoint_function(
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/fastapi/routing.py", line 245, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/anyio/to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 2502, in run_sync_in_worker_thread
+    return await future
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+  File "/home/devuser/srv/app/backend/api/health/api_exercise.py", line 33, in get_exercise_detail
+    .joinedload("muscle_group"),
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/sqlalchemy/orm/strategy_options.py", line 317, in joinedload
+    loader = self._set_relationship_strategy(
+  File "<string>", line 2, in _set_relationship_strategy
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/sqlalchemy/sql/base.py", line 284, in _generative
+    x = fn(self, *args, **kw)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/sqlalchemy/orm/strategy_options.py", line 807, in _set_relationship_strategy
+    self._clone_for_bind_strategy(
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/sqlalchemy/orm/strategy_options.py", line 1287, in _clone_for_bind_strategy
+    load_element = _TokenStrategyLoad.create(
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/sqlalchemy/orm/strategy_options.py", line 1764, in create
+    path = opt._init_path(
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/sqlalchemy/orm/strategy_options.py", line 2166, in _init_path
+    raise sa_exc.ArgumentError(
+sqlalchemy.exc.ArgumentError: Strings are not accepted for attribute names in loader options; please use class-bound attributes directly.
+2026-01-15 14:15:26,204 | INFO | 🟢 Logging inicializado correctamente
+2026-01-15 14:15:26,230 | INFO | 🚀 SRV Backend arrancado correctamente
+2026-01-15 14:15:32,694 | INFO | 🟢 Logging inicializado correctamente
+2026-01-15 14:15:32,721 | INFO | 🚀 SRV Backend arrancado correctamente
+2026-01-15 14:15:52,655 | INFO | GET /health/api/health/api/exercise/3 | 200 | 301.64 ms
+2026-01-15 14:15:54,958 | INFO | GET /health/api/health/api/exercise/3 | 200 | 27.55 ms
+2026-01-15 14:16:11,156 | INFO | GET /health/api/health/api/exercise/3 | 200 | 27.10 ms
+2026-01-15 14:16:19,894 | INFO | GET /health/api/exercise/3 | 404 | 1.78 ms
+2026-01-15 14:17:52,242 | INFO | GET /docs | 200 | 1.58 ms
+2026-01-15 14:17:52,411 | INFO | GET /openapi.json | 200 | 39.56 ms
+2026-01-15 14:26:17,542 | INFO | 🟢 Logging inicializado correctamente
+2026-01-15 14:26:17,569 | INFO | 🚀 SRV Backend arrancado correctamente
+2026-01-15 14:26:29,318 | INFO | GET /health/api/exercise/3 | 404 | 2.31 ms
+2026-01-15 14:26:43,686 | INFO | 🟢 Logging inicializado correctamente
+2026-01-15 14:26:43,713 | INFO | 🚀 SRV Backend arrancado correctamente
+2026-01-15 14:26:55,179 | INFO | GET /health/api/exercise/3 | 200 | 305.82 ms
