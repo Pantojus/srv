@@ -10,7 +10,9 @@ fetch("/health/activity/today")
 
     let html = "";
 
+    // -------------------
     // CARDIO
+    // -------------------
     if (data.cardio && data.cardio.length > 0) {
       html += "<h2>Cardio</h2><ul>";
       data.cardio.forEach(c => {
@@ -19,7 +21,9 @@ fetch("/health/activity/today")
       html += "</ul>";
     }
 
+    // -------------------
     // FUERZA
+    // -------------------
     if (data.strength && data.strength.length > 0) {
       html += "<h2>Fuerza</h2>";
 
@@ -27,7 +31,14 @@ fetch("/health/activity/today")
         html += `<h3>${group.group}</h3><ul>`;
 
         group.exercises.forEach(ex => {
-          html += `<li>${ex}</li>`;
+          html += `
+            <li 
+              class="exercise-item"
+              data-exercise-id="${ex.id}"
+            >
+              ${ex.name}
+            </li>
+          `;
         });
 
         html += "</ul>";

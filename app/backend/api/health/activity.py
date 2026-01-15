@@ -106,7 +106,10 @@ def get_today_activity(
 
             for pe in sm.performed_exercises:
                 strength_groups[sm.muscle_group.name].append(
-                    pe.muscle_exercise.name
+                    {
+                        "id": pe.id,
+                        "name": pe.muscle_exercise.name,
+                    }
                 )
                 total_exercises += 1
 
