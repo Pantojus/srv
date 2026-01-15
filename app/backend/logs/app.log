@@ -304,3 +304,374 @@ sqlalchemy.exc.ArgumentError: Strings are not accepted for attribute names in lo
 2026-01-15 15:25:14,665 | INFO | 💪 MuscleGroup=Espalda | performed_exercises=2
 2026-01-15 15:25:14,666 | INFO | 📦 Strength result | groups=2 | total_exercises=4
 2026-01-15 15:25:14,669 | INFO | GET /health/activity/today | 200 | 41.10 ms
+2026-01-15 15:33:18,269 | INFO | 🟢 Logging inicializado correctamente
+2026-01-15 15:33:18,296 | INFO | 🚀 SRV Backend arrancado correctamente
+2026-01-15 15:33:22,174 | INFO | GET /health/activity | 200 | 261.69 ms
+2026-01-15 15:33:22,256 | INFO | GET /static/js/activity.js | 200 | 21.29 ms
+2026-01-15 15:33:22,303 | INFO | 📅 get_today_activity | user_id=1 | date=2026-01-15
+2026-01-15 15:33:22,399 | INFO | ✅ TrainingDay found | cardio_sessions=0 | strength_sessions=1
+2026-01-15 15:33:22,400 | INFO | 🏃 Cardio sessions processed: 0
+2026-01-15 15:33:22,401 | INFO | 🏋️ StrengthSession id=4 muscles=2
+2026-01-15 15:33:22,401 | INFO | 💪 MuscleGroup=Pectoral | performed_exercises=2
+2026-01-15 15:33:22,402 | INFO | 💪 MuscleGroup=Espalda | performed_exercises=2
+2026-01-15 15:33:22,402 | INFO | 📦 Strength result | groups=2 | total_exercises=4
+2026-01-15 15:33:22,405 | INFO | GET /health/activity/today | 200 | 125.25 ms
+2026-01-15 15:33:23,788 | INFO | GET /health/api/exercise/7 | 200 | 76.99 ms
+2026-01-15 15:33:26,932 | INFO | GET /health/api/exercise/8 | 200 | 29.21 ms
+2026-01-15 15:33:29,929 | INFO | GET /health/api/exercise/9 | 200 | 26.68 ms
+2026-01-15 15:33:31,384 | INFO | GET /health/api/exercise/10 | 200 | 26.51 ms
+2026-01-15 15:33:32,720 | INFO | GET /health/api/exercise/8 | 200 | 26.29 ms
+2026-01-15 15:33:43,251 | INFO | GET /health/api/exercise/7 | 200 | 27.30 ms
+2026-01-15 15:33:52,130 | INFO | GET /health/api/exercise/7 | 200 | 27.73 ms
+2026-01-15 15:33:53,698 | INFO | GET /health/api/exercise/7 | 200 | 27.45 ms
+2026-01-15 15:33:55,259 | INFO | GET /health/api/exercise/7 | 200 | 29.58 ms
+2026-01-15 15:52:08,622 | INFO | GET /health/activity | 200 | 21.86 ms
+2026-01-15 15:52:34,096 | INFO | 🟢 Logging inicializado correctamente
+2026-01-15 15:52:34,123 | INFO | 🚀 SRV Backend arrancado correctamente
+2026-01-15 15:52:36,522 | INFO | GET /health/activity | 200 | 264.65 ms
+2026-01-15 15:52:41,939 | INFO | 📅 get_today_activity | user_id=1 | date=2026-01-15
+2026-01-15 15:52:42,039 | INFO | ✅ TrainingDay found | cardio_sessions=0 | strength_sessions=1
+2026-01-15 15:52:42,039 | INFO | 🏃 Cardio sessions processed: 0
+2026-01-15 15:52:42,040 | INFO | 🏋️ StrengthSession id=4 muscles=2
+2026-01-15 15:52:42,040 | INFO | 💪 MuscleGroup=Pectoral | performed_exercises=2
+2026-01-15 15:52:42,041 | INFO | 💪 MuscleGroup=Espalda | performed_exercises=2
+2026-01-15 15:52:42,041 | INFO | 📦 Strength result | groups=2 | total_exercises=4
+2026-01-15 15:52:42,044 | INFO | GET /health/activity/today | 200 | 128.20 ms
+2026-01-15 15:52:58,379 | INFO | GET /health/activity | 200 | 13.46 ms
+2026-01-15 16:03:47,955 | INFO | GET /health/activity | 200 | 13.13 ms
+2026-01-15 16:03:49,417 | INFO | GET /health/activity | 200 | 12.96 ms
+2026-01-15 16:04:28,739 | INFO | GET /health/activity | 200 | 17.76 ms
+2026-01-15 16:04:28,782 | INFO | GET /static/js/activity.js | 200 | 21.76 ms
+2026-01-15 16:04:28,830 | INFO | 📅 get_today_activity | user_id=1 | date=2026-01-15
+2026-01-15 16:04:28,851 | INFO | ✅ TrainingDay found | cardio_sessions=0 | strength_sessions=1
+2026-01-15 16:04:28,852 | INFO | 🏃 Cardio sessions processed: 0
+2026-01-15 16:04:28,853 | INFO | 🏋️ StrengthSession id=4 muscles=2
+2026-01-15 16:04:28,853 | INFO | 💪 MuscleGroup=Pectoral | performed_exercises=2
+2026-01-15 16:04:28,854 | INFO | 💪 MuscleGroup=Espalda | performed_exercises=2
+2026-01-15 16:04:28,855 | INFO | 📦 Strength result | groups=2 | total_exercises=4
+2026-01-15 16:04:28,858 | INFO | GET /health/activity/today | 200 | 42.19 ms
+2026-01-15 16:04:30,775 | INFO | GET /health/api/exercise/7 | 200 | 77.21 ms
+2026-01-15 16:04:44,176 | INFO | GET /health/api/exercise/8 | 200 | 29.88 ms
+2026-01-15 16:04:44,819 | INFO | GET /health/api/exercise/7 | 200 | 26.84 ms
+2026-01-15 16:04:50,452 | INFO | GET /health/api/exercise/8 | 200 | 27.64 ms
+2026-01-15 16:05:52,308 | INFO | GET /health/activity | 200 | 13.24 ms
+2026-01-15 16:05:52,365 | INFO | GET /static/js/activity.js | 200 | 3.43 ms
+2026-01-15 16:05:52,439 | INFO | 📅 get_today_activity | user_id=1 | date=2026-01-15
+2026-01-15 16:05:52,460 | INFO | ✅ TrainingDay found | cardio_sessions=0 | strength_sessions=1
+2026-01-15 16:05:52,460 | INFO | 🏃 Cardio sessions processed: 0
+2026-01-15 16:05:52,461 | INFO | 🏋️ StrengthSession id=4 muscles=2
+2026-01-15 16:05:52,462 | INFO | 💪 MuscleGroup=Pectoral | performed_exercises=2
+2026-01-15 16:05:52,462 | INFO | 💪 MuscleGroup=Espalda | performed_exercises=2
+2026-01-15 16:05:52,463 | INFO | 📦 Strength result | groups=2 | total_exercises=4
+2026-01-15 16:05:52,466 | INFO | GET /health/activity/today | 200 | 40.85 ms
+2026-01-15 16:05:53,762 | INFO | GET /health/api/exercise/7 | 200 | 26.56 ms
+2026-01-15 16:06:08,572 | INFO | GET /health/api/exercise/8 | 200 | 27.13 ms
+2026-01-15 16:06:09,898 | INFO | GET /health/api/exercise/7 | 200 | 26.68 ms
+2026-01-15 16:06:36,779 | INFO | GET /health/activity | 200 | 13.23 ms
+2026-01-15 16:06:36,806 | INFO | GET /static/js/activity.js | 200 | 3.40 ms
+2026-01-15 16:06:36,872 | INFO | 📅 get_today_activity | user_id=1 | date=2026-01-15
+2026-01-15 16:06:36,894 | INFO | ✅ TrainingDay found | cardio_sessions=0 | strength_sessions=1
+2026-01-15 16:06:36,895 | INFO | 🏃 Cardio sessions processed: 0
+2026-01-15 16:06:36,896 | INFO | 🏋️ StrengthSession id=4 muscles=2
+2026-01-15 16:06:36,897 | INFO | 💪 MuscleGroup=Pectoral | performed_exercises=2
+2026-01-15 16:06:36,898 | INFO | 💪 MuscleGroup=Espalda | performed_exercises=2
+2026-01-15 16:06:36,898 | INFO | 📦 Strength result | groups=2 | total_exercises=4
+2026-01-15 16:06:36,902 | INFO | GET /health/activity/today | 200 | 42.56 ms
+2026-01-15 16:06:37,963 | INFO | GET /health/api/exercise/7 | 200 | 27.15 ms
+2026-01-15 16:06:52,643 | INFO | GET /health/api/exercise/8 | 200 | 27.32 ms
+2026-01-15 16:06:55,243 | INFO | GET /health/api/exercise/7 | 200 | 27.11 ms
+2026-01-15 16:06:55,892 | INFO | GET /health/api/exercise/10 | 200 | 27.93 ms
+2026-01-15 16:06:58,915 | INFO | GET /health/api/exercise/8 | 200 | 26.85 ms
+2026-01-15 16:07:02,372 | INFO | GET /health/api/exercise/8 | 200 | 27.52 ms
+2026-01-15 16:07:54,289 | INFO | GET /health/api/exercise/7 | 200 | 26.83 ms
+2026-01-15 16:09:13,749 | INFO | GET /.well-known/appspecific/com.chrome.devtools.json | 404 | 1.67 ms
+2026-01-15 16:09:19,092 | INFO | GET /health/api/exercise/7 | 200 | 35.23 ms
+2026-01-15 16:18:53,916 | INFO | GET /health/api/exercise/7 | 200 | 27.74 ms
+2026-01-15 16:21:20,726 | INFO | GET /health/activity | 200 | 20.06 ms
+2026-01-15 16:21:20,761 | INFO | GET /.well-known/appspecific/com.chrome.devtools.json | 404 | 1.74 ms
+2026-01-15 16:33:05,214 | INFO | GET /health/activity | 200 | 19.02 ms
+2026-01-15 16:33:05,255 | INFO | GET /.well-known/appspecific/com.chrome.devtools.json | 404 | 1.63 ms
+2026-01-15 16:33:05,263 | INFO | GET /static/js/activity.js | 200 | 3.50 ms
+2026-01-15 16:33:05,329 | INFO | 📅 get_today_activity | user_id=1 | date=2026-01-15
+2026-01-15 16:33:05,502 | INFO | ✅ TrainingDay found | cardio_sessions=0 | strength_sessions=1
+2026-01-15 16:33:05,503 | INFO | 🏃 Cardio sessions processed: 0
+2026-01-15 16:33:05,504 | INFO | 🏋️ StrengthSession id=4 muscles=2
+2026-01-15 16:33:05,504 | INFO | 💪 MuscleGroup=Pectoral | performed_exercises=2
+2026-01-15 16:33:05,505 | INFO | 💪 MuscleGroup=Espalda | performed_exercises=2
+2026-01-15 16:33:05,505 | INFO | 📦 Strength result | groups=2 | total_exercises=4
+2026-01-15 16:33:05,508 | INFO | GET /health/activity/today | 200 | 193.11 ms
+2026-01-15 16:33:10,429 | INFO | GET /health/api/exercise/7 | 200 | 24.22 ms
+2026-01-15 16:33:21,862 | INFO | GET /health/api/exercise/7 | 200 | 27.77 ms
+2026-01-15 17:22:21,301 | INFO | GET /health/api/exercise/7 | 200 | 27.24 ms
+2026-01-15 17:22:23,129 | INFO | GET /health/api/exercise/8 | 200 | 28.32 ms
+2026-01-15 17:23:28,713 | INFO | GET /health/activity | 200 | 13.74 ms
+2026-01-15 17:23:28,745 | INFO | GET /.well-known/appspecific/com.chrome.devtools.json | 404 | 1.73 ms
+2026-01-15 17:23:28,754 | INFO | GET /static/js/activity.js | 200 | 3.45 ms
+2026-01-15 17:23:28,822 | INFO | 📅 get_today_activity | user_id=1 | date=2026-01-15
+2026-01-15 17:23:28,843 | INFO | ✅ TrainingDay found | cardio_sessions=0 | strength_sessions=1
+2026-01-15 17:23:28,844 | INFO | 🏃 Cardio sessions processed: 0
+2026-01-15 17:23:28,845 | INFO | 🏋️ StrengthSession id=4 muscles=2
+2026-01-15 17:23:28,846 | INFO | 💪 MuscleGroup=Pectoral | performed_exercises=2
+2026-01-15 17:23:28,846 | INFO | 💪 MuscleGroup=Espalda | performed_exercises=2
+2026-01-15 17:23:28,847 | INFO | 📦 Strength result | groups=2 | total_exercises=4
+2026-01-15 17:23:28,850 | INFO | GET /health/activity/today | 200 | 42.06 ms
+2026-01-15 17:23:30,335 | INFO | GET /health/api/exercise/7 | 200 | 27.48 ms
+2026-01-15 17:23:52,393 | INFO | 🟢 Logging inicializado correctamente
+2026-01-15 17:23:52,419 | INFO | 🚀 SRV Backend arrancado correctamente
+2026-01-15 17:23:56,180 | INFO | GET /health | 307 | 2.59 ms
+2026-01-15 17:23:56,268 | INFO | GET /health/ | 200 | 48.50 ms
+2026-01-15 17:23:56,311 | INFO | GET /.well-known/appspecific/com.chrome.devtools.json | 404 | 1.67 ms
+2026-01-15 17:24:14,070 | INFO | POST /health/login | 302 | 646.83 ms
+2026-01-15 17:24:14,114 | INFO | GET /health/dashboard | 200 | 22.01 ms
+2026-01-15 17:24:14,145 | INFO | GET /.well-known/appspecific/com.chrome.devtools.json | 404 | 1.84 ms
+2026-01-15 17:24:23,984 | INFO | GET /health/activity | 200 | 20.40 ms
+2026-01-15 17:24:24,047 | INFO | GET /.well-known/appspecific/com.chrome.devtools.json | 404 | 1.62 ms
+2026-01-15 17:24:24,075 | INFO | GET /static/js/activity.js | 304 | 21.23 ms
+2026-01-15 17:24:24,146 | INFO | 📅 get_today_activity | user_id=1 | date=2026-01-15
+2026-01-15 17:24:24,244 | INFO | ✅ TrainingDay found | cardio_sessions=0 | strength_sessions=1
+2026-01-15 17:24:24,245 | INFO | 🏃 Cardio sessions processed: 0
+2026-01-15 17:24:24,245 | INFO | 🏋️ StrengthSession id=4 muscles=2
+2026-01-15 17:24:24,246 | INFO | 💪 MuscleGroup=Pectoral | performed_exercises=2
+2026-01-15 17:24:24,246 | INFO | 💪 MuscleGroup=Espalda | performed_exercises=2
+2026-01-15 17:24:24,247 | INFO | 📦 Strength result | groups=2 | total_exercises=4
+2026-01-15 17:24:24,250 | INFO | GET /health/activity/today | 200 | 127.31 ms
+2026-01-15 17:24:27,102 | INFO | GET /health/api/exercise/7 | 200 | 78.98 ms
+2026-01-15 17:27:45,526 | INFO | GET /health/api/exercise/8 | 200 | 29.23 ms
+2026-01-15 17:27:46,782 | INFO | GET /health/api/exercise/7 | 200 | 29.32 ms
+2026-01-15 17:27:48,397 | INFO | GET /health/api/exercise/8 | 200 | 28.72 ms
+2026-01-15 17:27:49,727 | INFO | GET /health/api/exercise/9 | 200 | 28.49 ms
+2026-01-15 17:46:05,176 | INFO | GET /health/activity | 200 | 13.65 ms
+2026-01-15 17:46:05,226 | INFO | GET /.well-known/appspecific/com.chrome.devtools.json | 404 | 3.09 ms
+2026-01-15 17:46:05,233 | INFO | GET /static/js/activity.js | 304 | 7.43 ms
+2026-01-15 17:46:05,276 | INFO | 📅 get_today_activity | user_id=1 | date=2026-01-15
+2026-01-15 17:46:05,299 | INFO | ✅ TrainingDay found | cardio_sessions=0 | strength_sessions=1
+2026-01-15 17:46:05,300 | INFO | 🏃 Cardio sessions processed: 0
+2026-01-15 17:46:05,300 | INFO | 🏋️ StrengthSession id=4 muscles=2
+2026-01-15 17:46:05,301 | INFO | 💪 MuscleGroup=Pectoral | performed_exercises=2
+2026-01-15 17:46:05,302 | INFO | 💪 MuscleGroup=Espalda | performed_exercises=2
+2026-01-15 17:46:05,302 | INFO | 📦 Strength result | groups=2 | total_exercises=4
+2026-01-15 17:46:05,305 | INFO | GET /health/activity/today | 200 | 43.42 ms
+2026-01-15 17:46:06,557 | INFO | GET /health/api/exercise/7 | 200 | 27.95 ms
+2026-01-15 17:46:20,117 | INFO | 🟢 Logging inicializado correctamente
+2026-01-15 17:46:20,144 | INFO | 🚀 SRV Backend arrancado correctamente
+2026-01-15 17:46:26,087 | INFO | GET /health | 307 | 2.11 ms
+2026-01-15 17:46:26,148 | INFO | GET /health/ | 200 | 47.04 ms
+2026-01-15 17:46:26,180 | INFO | GET /.well-known/appspecific/com.chrome.devtools.json | 404 | 1.53 ms
+2026-01-15 17:46:37,264 | INFO | POST /health/login | 302 | 643.60 ms
+2026-01-15 17:46:37,306 | INFO | GET /health/dashboard | 200 | 21.78 ms
+2026-01-15 17:46:37,339 | INFO | GET /.well-known/appspecific/com.chrome.devtools.json | 404 | 1.62 ms
+2026-01-15 17:46:48,212 | INFO | GET /health/activity | 200 | 20.23 ms
+2026-01-15 17:46:48,255 | INFO | GET /.well-known/appspecific/com.chrome.devtools.json | 404 | 1.55 ms
+2026-01-15 17:46:48,288 | INFO | 📅 get_today_activity | user_id=1 | date=2026-01-15
+2026-01-15 17:46:48,385 | INFO | ✅ TrainingDay found | cardio_sessions=0 | strength_sessions=1
+2026-01-15 17:46:48,386 | INFO | 🏃 Cardio sessions processed: 0
+2026-01-15 17:46:48,386 | INFO | 🏋️ StrengthSession id=4 muscles=2
+2026-01-15 17:46:48,387 | INFO | 💪 MuscleGroup=Pectoral | performed_exercises=2
+2026-01-15 17:46:48,387 | INFO | 💪 MuscleGroup=Espalda | performed_exercises=2
+2026-01-15 17:46:48,388 | INFO | 📦 Strength result | groups=2 | total_exercises=4
+2026-01-15 17:46:48,391 | INFO | GET /health/activity/today | 200 | 126.52 ms
+2026-01-15 17:46:49,814 | INFO | GET /health/api/exercise/7 | 200 | 76.88 ms
+2026-01-15 17:47:13,803 | INFO | GET /health/api/exercise/7 | 200 | 27.09 ms
+2026-01-15 17:47:32,134 | INFO | GET /health/api/exercise/7 | 200 | 26.94 ms
+2026-01-15 17:47:38,092 | INFO | GET /health/api/exercise/7 | 200 | 27.04 ms
+2026-01-15 17:47:39,110 | INFO | GET /health/api/exercise/7 | 200 | 27.98 ms
+2026-01-15 17:47:42,196 | INFO | GET /health/api/exercise/8 | 200 | 27.09 ms
+2026-01-15 17:48:25,392 | INFO | GET /health/logout | 302 | 4.87 ms
+2026-01-15 17:48:25,407 | INFO | GET /health | 307 | 1.31 ms
+2026-01-15 17:48:25,459 | INFO | GET /health/ | 200 | 3.66 ms
+2026-01-15 17:48:25,563 | INFO | GET /.well-known/appspecific/com.chrome.devtools.json | 404 | 1.57 ms
+2026-01-15 17:48:48,446 | INFO | POST /health/login | 200 | 423.96 ms
+2026-01-15 17:48:48,490 | INFO | GET /.well-known/appspecific/com.chrome.devtools.json | 404 | 1.58 ms
+2026-01-15 17:48:58,049 | INFO | POST /health/login | 302 | 414.06 ms
+2026-01-15 17:48:58,071 | INFO | GET /health/dashboard | 200 | 10.84 ms
+2026-01-15 17:48:58,123 | INFO | GET /.well-known/appspecific/com.chrome.devtools.json | 404 | 1.56 ms
+2026-01-15 17:49:08,769 | INFO | GET /health/activity | 200 | 12.56 ms
+2026-01-15 17:49:08,808 | INFO | GET /.well-known/appspecific/com.chrome.devtools.json | 404 | 2.09 ms
+2026-01-15 17:49:08,833 | INFO | GET /static/js/activity.js | 304 | 22.21 ms
+2026-01-15 17:49:08,881 | INFO | 📅 get_today_activity | user_id=1 | date=2026-01-15
+2026-01-15 17:49:08,900 | INFO | ✅ TrainingDay found | cardio_sessions=0 | strength_sessions=1
+2026-01-15 17:49:08,901 | INFO | 🏃 Cardio sessions processed: 0
+2026-01-15 17:49:08,902 | INFO | 🏋️ StrengthSession id=4 muscles=2
+2026-01-15 17:49:08,902 | INFO | 💪 MuscleGroup=Pectoral | performed_exercises=2
+2026-01-15 17:49:08,903 | INFO | 💪 MuscleGroup=Espalda | performed_exercises=2
+2026-01-15 17:49:08,904 | INFO | 📦 Strength result | groups=2 | total_exercises=4
+2026-01-15 17:49:08,907 | INFO | GET /health/activity/today | 200 | 41.54 ms
+2026-01-15 17:49:12,756 | INFO | GET /health/api/exercise/7 | 200 | 27.55 ms
+2026-01-15 18:00:12,852 | INFO | GET /health/logout | 302 | 3.60 ms
+2026-01-15 18:00:12,865 | INFO | GET /health | 307 | 1.47 ms
+2026-01-15 18:00:12,933 | INFO | GET /health/ | 200 | 4.18 ms
+2026-01-15 18:00:12,966 | INFO | GET /.well-known/appspecific/com.chrome.devtools.json | 404 | 1.56 ms
+2026-01-15 18:18:02,716 | INFO | 🟢 Logging inicializado correctamente
+2026-01-15 18:18:02,743 | INFO | 🚀 SRV Backend arrancado correctamente
+2026-01-15 18:18:27,027 | INFO | GET /health/ | 200 | 48.92 ms
+2026-01-15 18:18:27,092 | INFO | GET /.well-known/appspecific/com.chrome.devtools.json | 404 | 1.63 ms
+2026-01-15 18:18:27,112 | INFO | GET /favicon.ico | 404 | 1.49 ms
+2026-01-15 18:18:35,307 | INFO | GET /health | 307 | 1.46 ms
+2026-01-15 18:18:35,321 | INFO | GET /health/ | 200 | 3.74 ms
+2026-01-15 18:18:35,371 | INFO | GET /.well-known/appspecific/com.chrome.devtools.json | 404 | 1.58 ms
+2026-01-15 18:18:37,486 | INFO | GET /health/ | 200 | 3.66 ms
+2026-01-15 18:18:37,531 | INFO | GET /.well-known/appspecific/com.chrome.devtools.json | 404 | 1.59 ms
+2026-01-15 18:18:37,854 | INFO | GET /static/css/main.css | 200 | 21.05 ms
+2026-01-15 18:18:37,867 | INFO | GET /static/js/main.js | 200 | 3.32 ms
+2026-01-15 18:18:37,931 | INFO | GET /favicon.ico | 404 | 1.57 ms
+2026-01-15 18:18:44,872 | INFO | POST /health/login | 302 | 651.71 ms
+2026-01-15 18:18:44,916 | INFO | GET /health/dashboard | 200 | 22.26 ms
+2026-01-15 18:18:44,959 | INFO | GET /.well-known/appspecific/com.chrome.devtools.json | 404 | 1.73 ms
+2026-01-15 18:18:52,914 | INFO | GET /health/activity | 200 | 20.57 ms
+2026-01-15 18:18:52,948 | INFO | GET /.well-known/appspecific/com.chrome.devtools.json | 404 | 1.63 ms
+2026-01-15 18:18:53,244 | INFO | GET /static/js/activity.js | 200 | 3.52 ms
+2026-01-15 18:18:53,326 | INFO | 📅 get_today_activity | user_id=1 | date=2026-01-15
+2026-01-15 18:18:53,423 | INFO | ✅ TrainingDay found | cardio_sessions=0 | strength_sessions=1
+2026-01-15 18:18:53,424 | INFO | 🏃 Cardio sessions processed: 0
+2026-01-15 18:18:53,425 | INFO | 🏋️ StrengthSession id=4 muscles=2
+2026-01-15 18:18:53,425 | INFO | 💪 MuscleGroup=Pectoral | performed_exercises=2
+2026-01-15 18:18:53,426 | INFO | 💪 MuscleGroup=Espalda | performed_exercises=2
+2026-01-15 18:18:53,426 | INFO | 📦 Strength result | groups=2 | total_exercises=4
+2026-01-15 18:18:53,429 | INFO | GET /health/activity/today | 200 | 127.22 ms
+2026-01-15 18:18:54,474 | INFO | GET /health/api/exercise/7 | 200 | 78.20 ms
+2026-01-15 18:23:59,172 | INFO | GET /health/api/exercise/7 | 200 | 27.32 ms
+2026-01-15 18:24:00,877 | INFO | GET /health/api/exercise/8 | 200 | 28.42 ms
+2026-01-15 18:24:02,316 | INFO | GET /health/api/exercise/9 | 200 | 28.28 ms
+2026-01-15 18:24:03,192 | INFO | GET /health/api/exercise/10 | 200 | 29.67 ms
+2026-01-15 18:24:04,276 | INFO | GET /health/api/exercise/7 | 200 | 27.21 ms
+2026-01-15 18:24:07,812 | INFO | GET /health/api/exercise/7 | 200 | 28.29 ms
+2026-01-15 18:24:10,597 | INFO | GET /health/api/exercise/7 | 200 | 27.73 ms
+2026-01-15 18:29:23,481 | INFO | GET /health/api/exercise/7 | 200 | 26.92 ms
+2026-01-15 21:00:40,869 | INFO | GET /health/api/exercise/7 | 200 | 28.15 ms
+2026-01-15 21:01:28,407 | INFO | GET /health/logout | 302 | 4.90 ms
+2026-01-15 21:01:28,422 | INFO | GET /health | 307 | 1.46 ms
+2026-01-15 21:01:28,443 | INFO | GET /health/ | 200 | 3.65 ms
+2026-01-15 21:01:28,536 | INFO | GET /static/css/main.css | 304 | 3.40 ms
+2026-01-15 21:01:38,079 | INFO | POST /health/login | 302 | 414.19 ms
+2026-01-15 21:01:38,117 | INFO | GET /health/dashboard | 200 | 11.03 ms
+2026-01-15 21:01:51,129 | INFO | GET /health/activity | 200 | 13.78 ms
+2026-01-15 21:01:51,159 | INFO | GET /static/js/activity.js | 304 | 3.66 ms
+2026-01-15 21:01:51,184 | INFO | 📅 get_today_activity | user_id=1 | date=2026-01-15
+2026-01-15 21:01:51,213 | INFO | ✅ TrainingDay found | cardio_sessions=0 | strength_sessions=1
+2026-01-15 21:01:51,214 | INFO | 🏃 Cardio sessions processed: 0
+2026-01-15 21:01:51,214 | INFO | 🏋️ StrengthSession id=4 muscles=2
+2026-01-15 21:01:51,215 | INFO | 💪 MuscleGroup=Pectoral | performed_exercises=2
+2026-01-15 21:01:51,216 | INFO | 💪 MuscleGroup=Espalda | performed_exercises=2
+2026-01-15 21:01:51,216 | INFO | 📦 Strength result | groups=2 | total_exercises=4
+2026-01-15 21:01:51,219 | INFO | GET /health/activity/today | 200 | 50.09 ms
+2026-01-15 21:29:36,564 | INFO | GET /health/activity | 200 | 13.61 ms
+2026-01-15 21:29:36,626 | INFO | GET /static/js/activity.js | 304 | 8.09 ms
+2026-01-15 21:29:36,630 | INFO | GET /static/css/main.css | 200 | 10.27 ms
+2026-01-15 21:29:36,700 | INFO | 📅 get_today_activity | user_id=1 | date=2026-01-15
+2026-01-15 21:29:36,869 | INFO | ✅ TrainingDay found | cardio_sessions=0 | strength_sessions=1
+2026-01-15 21:29:36,870 | INFO | 🏃 Cardio sessions processed: 0
+2026-01-15 21:29:36,871 | INFO | 🏋️ StrengthSession id=4 muscles=2
+2026-01-15 21:29:36,871 | INFO | 💪 MuscleGroup=Pectoral | performed_exercises=2
+2026-01-15 21:29:36,871 | INFO | 💪 MuscleGroup=Espalda | performed_exercises=2
+2026-01-15 21:29:36,872 | INFO | 📦 Strength result | groups=2 | total_exercises=4
+2026-01-15 21:29:36,875 | INFO | GET /health/activity/today | 200 | 188.40 ms
+2026-01-15 21:29:38,147 | INFO | GET /health/api/exercise/7 | 200 | 25.40 ms
+2026-01-15 21:41:12,135 | INFO | GET /health/activity | 200 | 13.91 ms
+2026-01-15 21:41:12,192 | INFO | GET /static/css/main.css | 304 | 3.70 ms
+2026-01-15 21:41:12,248 | INFO | 📅 get_today_activity | user_id=1 | date=2026-01-15
+2026-01-15 21:41:12,268 | INFO | ✅ TrainingDay found | cardio_sessions=0 | strength_sessions=1
+2026-01-15 21:41:12,269 | INFO | 🏃 Cardio sessions processed: 0
+2026-01-15 21:41:12,270 | INFO | 🏋️ StrengthSession id=4 muscles=2
+2026-01-15 21:41:12,271 | INFO | 💪 MuscleGroup=Pectoral | performed_exercises=2
+2026-01-15 21:41:12,271 | INFO | 💪 MuscleGroup=Espalda | performed_exercises=2
+2026-01-15 21:41:12,272 | INFO | 📦 Strength result | groups=2 | total_exercises=4
+2026-01-15 21:41:12,275 | INFO | GET /health/activity/today | 200 | 41.25 ms
+2026-01-15 21:41:13,594 | INFO | GET /health/api/exercise/7 | 200 | 28.10 ms
+2026-01-15 21:41:21,196 | INFO | GET /health/activity | 200 | 13.35 ms
+2026-01-15 21:41:21,223 | INFO | GET /static/css/main.css | 200 | 7.29 ms
+2026-01-15 21:41:21,229 | INFO | GET /static/js/activity.js | 200 | 10.97 ms
+2026-01-15 21:41:21,274 | INFO | GET /static/js/main.js | 200 | 3.47 ms
+2026-01-15 21:41:21,296 | INFO | 📅 get_today_activity | user_id=1 | date=2026-01-15
+2026-01-15 21:41:21,307 | INFO | GET /favicon.ico | 404 | 1.67 ms
+2026-01-15 21:41:21,318 | INFO | ✅ TrainingDay found | cardio_sessions=0 | strength_sessions=1
+2026-01-15 21:41:21,320 | INFO | 🏃 Cardio sessions processed: 0
+2026-01-15 21:41:21,321 | INFO | 🏋️ StrengthSession id=4 muscles=2
+2026-01-15 21:41:21,322 | INFO | 💪 MuscleGroup=Pectoral | performed_exercises=2
+2026-01-15 21:41:21,322 | INFO | 💪 MuscleGroup=Espalda | performed_exercises=2
+2026-01-15 21:41:21,323 | INFO | 📦 Strength result | groups=2 | total_exercises=4
+2026-01-15 21:41:21,326 | INFO | GET /health/activity/today | 200 | 46.97 ms
+2026-01-15 21:41:22,830 | INFO | GET /health/api/exercise/7 | 200 | 27.41 ms
+2026-01-15 22:16:16,481 | INFO | GET /health/activity | 200 | 14.12 ms
+2026-01-15 22:16:16,550 | INFO | GET /static/css/main.css | 304 | 7.25 ms
+2026-01-15 22:16:16,555 | INFO | GET /static/js/activity.js | 200 | 10.23 ms
+2026-01-15 22:16:16,619 | INFO | 📅 get_today_activity | user_id=1 | date=2026-01-15
+2026-01-15 22:16:16,640 | INFO | ✅ TrainingDay found | cardio_sessions=0 | strength_sessions=1
+2026-01-15 22:16:16,641 | INFO | 🏃 Cardio sessions processed: 0
+2026-01-15 22:16:16,642 | INFO | 🏋️ StrengthSession id=4 muscles=2
+2026-01-15 22:16:16,642 | INFO | 💪 MuscleGroup=Pectoral | performed_exercises=2
+2026-01-15 22:16:16,643 | INFO | 💪 MuscleGroup=Espalda | performed_exercises=2
+2026-01-15 22:16:16,644 | INFO | 📦 Strength result | groups=2 | total_exercises=4
+2026-01-15 22:16:16,647 | INFO | GET /health/activity/today | 200 | 42.49 ms
+2026-01-15 22:16:18,036 | INFO | GET /health/api/exercise/7 | 200 | 28.33 ms
+2026-01-15 22:16:52,910 | INFO | GET /.well-known/appspecific/com.chrome.devtools.json | 404 | 1.86 ms
+2026-01-15 22:17:39,617 | INFO | GET /health/api/exercise/7 | 200 | 29.09 ms
+2026-01-15 22:39:06,788 | INFO | GET /health/activity | 200 | 13.87 ms
+2026-01-15 22:39:06,835 | INFO | GET /static/js/activity.js | 200 | 7.37 ms
+2026-01-15 22:39:06,841 | INFO | GET /static/css/main.css | 200 | 10.88 ms
+2026-01-15 22:39:06,873 | INFO | GET /.well-known/appspecific/com.chrome.devtools.json | 404 | 1.88 ms
+2026-01-15 22:39:06,892 | INFO | 📅 get_today_activity | user_id=1 | date=2026-01-15
+2026-01-15 22:39:06,913 | INFO | ✅ TrainingDay found | cardio_sessions=0 | strength_sessions=1
+2026-01-15 22:39:06,914 | INFO | 🏃 Cardio sessions processed: 0
+2026-01-15 22:39:06,914 | INFO | 🏋️ StrengthSession id=4 muscles=2
+2026-01-15 22:39:06,915 | INFO | 💪 MuscleGroup=Pectoral | performed_exercises=2
+2026-01-15 22:39:06,916 | INFO | 💪 MuscleGroup=Espalda | performed_exercises=2
+2026-01-15 22:39:06,916 | INFO | 📦 Strength result | groups=2 | total_exercises=4
+2026-01-15 22:39:06,919 | INFO | GET /health/activity/today | 200 | 42.81 ms
+2026-01-15 22:39:12,783 | INFO | GET /health/api/exercise/7 | 200 | 28.47 ms
+2026-01-15 22:39:58,597 | INFO | GET /health/api/exercise/9 | 200 | 27.91 ms
+2026-01-15 22:40:39,901 | INFO | GET /health/activity | 200 | 13.54 ms
+2026-01-15 22:40:39,944 | INFO | GET /static/css/main.css | 200 | 3.44 ms
+2026-01-15 22:40:39,994 | INFO | GET /static/js/activity.js | 304 | 3.38 ms
+2026-01-15 22:40:40,022 | INFO | 📅 get_today_activity | user_id=1 | date=2026-01-15
+2026-01-15 22:40:40,043 | INFO | ✅ TrainingDay found | cardio_sessions=0 | strength_sessions=1
+2026-01-15 22:40:40,044 | INFO | 🏃 Cardio sessions processed: 0
+2026-01-15 22:40:40,044 | INFO | 🏋️ StrengthSession id=4 muscles=2
+2026-01-15 22:40:40,045 | INFO | 💪 MuscleGroup=Pectoral | performed_exercises=2
+2026-01-15 22:40:40,046 | INFO | 💪 MuscleGroup=Espalda | performed_exercises=2
+2026-01-15 22:40:40,046 | INFO | 📦 Strength result | groups=2 | total_exercises=4
+2026-01-15 22:40:40,049 | INFO | GET /health/activity/today | 200 | 41.14 ms
+2026-01-15 22:40:42,413 | INFO | GET /health/api/exercise/7 | 200 | 27.30 ms
+2026-01-15 22:40:58,552 | INFO | GET /static/css/main.css | 304 | 3.81 ms
+2026-01-15 22:40:58,570 | INFO | GET /.well-known/appspecific/com.chrome.devtools.json | 404 | 1.74 ms
+2026-01-15 22:42:06,244 | INFO | GET /health/api/exercise/7 | 200 | 27.18 ms
+2026-01-15 22:42:07,197 | INFO | GET /health/api/exercise/7 | 200 | 26.79 ms
+2026-01-15 23:40:41,287 | INFO | GET /health/activity | 200 | 13.60 ms
+2026-01-15 23:40:41,371 | INFO | GET /static/css/main.css | 304 | 7.19 ms
+2026-01-15 23:40:41,376 | INFO | GET /static/js/activity.js | 200 | 10.34 ms
+2026-01-15 23:40:41,424 | INFO | 📅 get_today_activity | user_id=1 | date=2026-01-15
+2026-01-15 23:40:41,446 | INFO | ✅ TrainingDay found | cardio_sessions=0 | strength_sessions=1
+2026-01-15 23:40:41,447 | INFO | 🏃 Cardio sessions processed: 0
+2026-01-15 23:40:41,447 | INFO | 🏋️ StrengthSession id=4 muscles=2
+2026-01-15 23:40:41,448 | INFO | 💪 MuscleGroup=Pectoral | performed_exercises=2
+2026-01-15 23:40:41,449 | INFO | 💪 MuscleGroup=Espalda | performed_exercises=2
+2026-01-15 23:40:41,449 | INFO | 📦 Strength result | groups=2 | total_exercises=4
+2026-01-15 23:40:41,452 | INFO | GET /health/activity/today | 200 | 42.25 ms
+2026-01-15 23:40:42,688 | INFO | GET /health/api/exercise/7 | 200 | 28.25 ms
+2026-01-15 23:41:06,167 | INFO | GET /health/activity | 200 | 13.88 ms
+2026-01-15 23:41:06,225 | INFO | GET /static/js/activity.js | 200 | 3.44 ms
+2026-01-15 23:41:06,254 | INFO | 📅 get_today_activity | user_id=1 | date=2026-01-15
+2026-01-15 23:41:06,275 | INFO | ✅ TrainingDay found | cardio_sessions=0 | strength_sessions=1
+2026-01-15 23:41:06,276 | INFO | 🏃 Cardio sessions processed: 0
+2026-01-15 23:41:06,277 | INFO | 🏋️ StrengthSession id=4 muscles=2
+2026-01-15 23:41:06,278 | INFO | 💪 MuscleGroup=Pectoral | performed_exercises=2
+2026-01-15 23:41:06,278 | INFO | 💪 MuscleGroup=Espalda | performed_exercises=2
+2026-01-15 23:41:06,279 | INFO | 📦 Strength result | groups=2 | total_exercises=4
+2026-01-15 23:41:06,282 | INFO | GET /health/activity/today | 200 | 41.87 ms
+2026-01-15 23:41:07,945 | INFO | GET /health/api/exercise/7 | 200 | 28.02 ms
+2026-01-15 23:41:54,119 | INFO | GET /health/activity | 200 | 14.12 ms
+2026-01-15 23:41:54,181 | INFO | GET /static/js/activity.js | 200 | 3.52 ms
+2026-01-15 23:41:54,253 | INFO | 📅 get_today_activity | user_id=1 | date=2026-01-15
+2026-01-15 23:41:54,275 | INFO | ✅ TrainingDay found | cardio_sessions=0 | strength_sessions=1
+2026-01-15 23:41:54,275 | INFO | 🏃 Cardio sessions processed: 0
+2026-01-15 23:41:54,276 | INFO | 🏋️ StrengthSession id=4 muscles=2
+2026-01-15 23:41:54,277 | INFO | 💪 MuscleGroup=Pectoral | performed_exercises=2
+2026-01-15 23:41:54,277 | INFO | 💪 MuscleGroup=Espalda | performed_exercises=2
+2026-01-15 23:41:54,278 | INFO | 📦 Strength result | groups=2 | total_exercises=4
+2026-01-15 23:41:54,281 | INFO | GET /health/activity/today | 200 | 41.45 ms
+2026-01-15 23:41:55,531 | INFO | GET /health/api/exercise/7 | 200 | 27.69 ms
+2026-01-16 00:14:14,946 | INFO | GET /health/api/exercise/8 | 200 | 28.00 ms
+2026-01-16 00:14:16,699 | INFO | GET /health/api/exercise/8 | 200 | 28.28 ms
+2026-01-16 00:14:18,294 | INFO | GET /health/api/exercise/10 | 200 | 27.41 ms
+2026-01-16 00:14:22,219 | INFO | GET /health/api/exercise/7 | 200 | 26.84 ms
+2026-01-16 00:14:25,826 | INFO | GET /health/api/exercise/7 | 200 | 26.88 ms
+2026-01-16 00:16:57,917 | INFO | GET /health/api/exercise/7 | 200 | 28.96 ms

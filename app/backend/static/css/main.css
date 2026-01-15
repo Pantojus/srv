@@ -5,13 +5,25 @@ body {
     font-family: Arial, sans-serif;
 }
 
+header {
+    padding: 10px 20px;
+    border-bottom: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    padding: 20px;
+}
+
 /* ---------- Login ---------- */
 
 .login-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* ocupa toda la pantalla */
+    height: 100vh;
 }
 
 .login-box {
@@ -59,4 +71,129 @@ body {
     color: black;
     font-size: 14px;
     margin-bottom: 10px;
+}
+
+/* =====================================================
+   ACTIVIDAD · LISTA DE EJERCICIOS
+===================================================== */
+
+.exercise-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.exercise-list li {
+    margin-bottom: 6px;
+}
+
+/* 👉 ZONA CLICKABLE LIMITADA */
+.exercise-item {
+    display: inline-block;
+    padding: 6px 10px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background: #f9f9f9;
+    cursor: pointer;
+    max-width: 320px;
+}
+
+.exercise-item:hover {
+    background: #eaeaea;
+}
+
+/* =====================================================
+   DESPLEGABLE DEL EJERCICIO
+===================================================== */
+
+.exercise-detail {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease, margin 0.35s ease;
+    margin-left: 20px;
+}
+
+.exercise-detail.open {
+    max-height: 1000px;
+    margin: 10px 0 20px 20px;
+}
+
+/* CAJA DEL EJERCICIO (PAQUETE VISUAL) */
+.exercise-box {
+    border: 1px solid #333;
+    padding: 12px;
+    background: #fdfdfd;
+}
+
+/* CABECERA DEL DESPLEGABLE */
+.exercise-box-header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.close-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* =====================================================
+   TABLA DE SERIES
+===================================================== */
+
+.sets-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+.sets-table th,
+.sets-table td {
+    border: 1px solid #333;
+    padding: 6px;
+    text-align: center;
+}
+
+/* =====================================================
+   ACCIONES
+===================================================== */
+
+.exercise-actions {
+    text-align: right;
+}
+
+.save-btn {
+    padding: 6px 14px;
+    border: 1px solid #333;
+    background: none;
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.sets-table input {
+    width: 100%;
+    padding: 4px;
+    border: 1px solid #333;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* ---------- Ancho del bloque de actividad ---------- */
+#activity {
+  max-width: 25%;
+  min-width: 320px;
+}
+
+/* ---------- Botones de series ---------- */
+.add-set-btn,
+.remove-set-btn {
+  border: 1px solid #333;
+  background: none;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+.remove-set-btn {
+  color: #a00;
 }
