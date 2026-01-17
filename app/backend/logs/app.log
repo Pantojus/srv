@@ -675,3 +675,195 @@ sqlalchemy.exc.ArgumentError: Strings are not accepted for attribute names in lo
 2026-01-16 00:14:22,219 | INFO | GET /health/api/exercise/7 | 200 | 26.84 ms
 2026-01-16 00:14:25,826 | INFO | GET /health/api/exercise/7 | 200 | 26.88 ms
 2026-01-16 00:16:57,917 | INFO | GET /health/api/exercise/7 | 200 | 28.96 ms
+2026-01-16 00:53:22,899 | INFO | 🟢 Logging inicializado correctamente
+2026-01-16 00:53:22,927 | INFO | 🚀 SRV Backend arrancado correctamente
+2026-01-16 00:53:59,268 | INFO | 🟢 Logging inicializado correctamente
+2026-01-16 00:53:59,296 | INFO | 🚀 SRV Backend arrancado correctamente
+2026-01-16 00:54:05,715 | INFO | GET /health | 307 | 2.78 ms
+2026-01-16 00:54:05,780 | INFO | GET /health/ | 200 | 49.43 ms
+2026-01-16 00:54:05,839 | INFO | GET /static/css/main.css | 200 | 26.14 ms
+2026-01-16 00:54:05,843 | INFO | GET /static/js/main.js | 304 | 27.61 ms
+2026-01-16 00:54:05,891 | INFO | GET /favicon.ico | 404 | 1.68 ms
+2026-01-16 00:54:12,405 | ERROR | 🔥 ERROR 500 | POST /health/login
+Traceback (most recent call last):
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/sqlalchemy/orm/relationships.py", line 2434, in _determine_joins
+    self.primaryjoin = join_condition(
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/sqlalchemy/sql/util.py", line 121, in join_condition
+    return Join._join_condition(
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/sqlalchemy/sql/selectable.py", line 1453, in _join_condition
+    raise exc.NoForeignKeysError(
+sqlalchemy.exc.NoForeignKeysError: Can't find any foreign key relationships between 'strength_session_muscle' and 'performed_exercise'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/devuser/srv/app/backend/main.py", line 25, in logging_middleware
+    response = await call_next(request)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/fastapi/routing.py", line 115, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/fastapi/routing.py", line 101, in app
+    response = await f(request)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/fastapi/routing.py", line 355, in app
+    raw_response = await run_endpoint_function(
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/fastapi/routing.py", line 245, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/anyio/to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 2502, in run_sync_in_worker_thread
+    return await future
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+  File "/home/devuser/srv/app/backend/api/health/auth.py", line 24, in login
+    user = db.query(User).filter(User.username == username).first()
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 2941, in query
+    return self._query_cls(entities, self, **kwargs)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 276, in __init__
+    self._set_entities(entities)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 288, in _set_entities
+    self._raw_columns = [
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 289, in <listcomp>
+    coercions.expect(
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/sqlalchemy/sql/coercions.py", line 389, in expect
+    insp._post_inspect
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 1338, in __get__
+    obj.__dict__[self.__name__] = result = self.fget(obj)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/sqlalchemy/orm/mapper.py", line 2733, in _post_inspect
+    self._check_configure()
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/sqlalchemy/orm/mapper.py", line 2410, in _check_configure
+    _configure_registries({self.registry}, cascade=True)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/sqlalchemy/orm/mapper.py", line 4227, in _configure_registries
+    _do_configure_registries(registries, cascade)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/sqlalchemy/orm/mapper.py", line 4268, in _do_configure_registries
+    mapper._post_configure_properties()
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/sqlalchemy/orm/mapper.py", line 2427, in _post_configure_properties
+    prop.init()
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/sqlalchemy/orm/interfaces.py", line 595, in init
+    self.do_init()
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/sqlalchemy/orm/relationships.py", line 1657, in do_init
+    self._setup_join_conditions()
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/sqlalchemy/orm/relationships.py", line 1895, in _setup_join_conditions
+    self._join_condition = jc = JoinCondition(
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/sqlalchemy/orm/relationships.py", line 2321, in __init__
+    self._determine_joins()
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/sqlalchemy/orm/relationships.py", line 2455, in _determine_joins
+    raise sa_exc.NoForeignKeysError(
+sqlalchemy.exc.NoForeignKeysError: Could not determine join condition between parent/child tables on relationship StrengthSessionMuscle.performed_exercises - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2026-01-16 00:54:29,200 | ERROR | 🔥 ERROR 500 | POST /health/login
+Traceback (most recent call last):
+  File "/home/devuser/srv/app/backend/main.py", line 25, in logging_middleware
+    response = await call_next(request)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/fastapi/routing.py", line 115, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/fastapi/routing.py", line 101, in app
+    response = await f(request)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/fastapi/routing.py", line 355, in app
+    raw_response = await run_endpoint_function(
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/fastapi/routing.py", line 245, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/starlette/concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/anyio/to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 2502, in run_sync_in_worker_thread
+    return await future
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+  File "/home/devuser/srv/app/backend/api/health/auth.py", line 24, in login
+    user = db.query(User).filter(User.username == username).first()
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 2941, in query
+    return self._query_cls(entities, self, **kwargs)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 276, in __init__
+    self._set_entities(entities)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 288, in _set_entities
+    self._raw_columns = [
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 289, in <listcomp>
+    coercions.expect(
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/sqlalchemy/sql/coercions.py", line 389, in expect
+    insp._post_inspect
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 1338, in __get__
+    obj.__dict__[self.__name__] = result = self.fget(obj)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/sqlalchemy/orm/mapper.py", line 2733, in _post_inspect
+    self._check_configure()
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/sqlalchemy/orm/mapper.py", line 2410, in _check_configure
+    _configure_registries({self.registry}, cascade=True)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/sqlalchemy/orm/mapper.py", line 4227, in _configure_registries
+    _do_configure_registries(registries, cascade)
+  File "/home/devuser/srv/app/backend/.venv/lib/python3.10/site-packages/sqlalchemy/orm/mapper.py", line 4264, in _do_configure_registries
+    raise e
+sqlalchemy.exc.InvalidRequestError: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[StrengthSessionMuscle(strength_session_muscle)]'. Original exception was: Could not determine join condition between parent/child tables on relationship StrengthSessionMuscle.performed_exercises - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2026-01-16 00:54:52,533 | INFO | 🟢 Logging inicializado correctamente
+2026-01-16 00:54:52,561 | INFO | 🚀 SRV Backend arrancado correctamente
+2026-01-16 00:55:00,769 | INFO | POST /health/login | 302 | 654.30 ms
+2026-01-16 00:55:00,829 | INFO | GET /health/dashboard | 200 | 33.37 ms
+2026-01-16 00:55:08,222 | INFO | GET /health/activity | 200 | 20.90 ms
+2026-01-16 00:55:08,284 | INFO | GET /static/js/activity.js | 200 | 21.67 ms
+2026-01-16 00:55:08,331 | INFO | 📅 get_today_activity | user_id=1 | date=2026-01-16
+2026-01-16 00:55:08,424 | WARNING | ⚠️ No TrainingDay found | user_id=1 | date=2026-01-16
+2026-01-16 00:55:08,428 | INFO | GET /health/activity/today | 200 | 120.48 ms
+2026-01-17 19:14:53,399 | INFO | 🟢 Logging inicializado correctamente
+2026-01-17 19:14:53,425 | INFO | 🚀 SRV Backend arrancado correctamente
+2026-01-17 19:15:02,173 | INFO | GET /health | 307 | 2.12 ms
+2026-01-17 19:15:02,253 | INFO | GET /health/ | 200 | 48.39 ms
+2026-01-17 19:15:02,332 | INFO | GET /static/css/main.css | 304 | 22.41 ms
+2026-01-17 19:15:02,339 | INFO | GET /static/js/main.js | 304 | 7.37 ms
+2026-01-17 19:15:11,787 | INFO | POST /health/login | 302 | 645.67 ms
+2026-01-17 19:15:11,830 | INFO | GET /health/dashboard | 200 | 20.46 ms
+2026-01-17 19:15:22,720 | INFO | GET /health/activity | 200 | 22.42 ms
+2026-01-17 19:15:22,777 | INFO | GET /static/js/activity.js | 304 | 3.47 ms
+2026-01-17 19:15:22,818 | INFO | 📅 get_today_activity | user_id=1 | date=2026-01-17
+2026-01-17 19:15:22,916 | INFO | ✅ TrainingDay found | cardio_sessions=0 | strength_sessions=1
+2026-01-17 19:15:22,917 | INFO | 🏃 Cardio sessions processed: 0
+2026-01-17 19:15:22,918 | INFO | 🏋️ StrengthSession id=5 muscles=2
+2026-01-17 19:15:22,918 | INFO | 💪 MuscleGroup=Pectoral | performed_exercises=2
+2026-01-17 19:15:22,918 | INFO | 💪 MuscleGroup=Espalda | performed_exercises=2
+2026-01-17 19:15:22,919 | INFO | 📦 Strength result | groups=2 | total_exercises=4
+2026-01-17 19:15:22,922 | INFO | GET /health/activity/today | 200 | 128.18 ms
+2026-01-17 19:15:23,921 | INFO | GET /health/api/exercise/11 | 200 | 77.51 ms
+2026-01-17 19:22:49,737 | INFO | GET /docs | 200 | 1.69 ms
+2026-01-17 19:22:49,933 | INFO | GET /openapi.json | 200 | 39.17 ms
